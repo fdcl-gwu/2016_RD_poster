@@ -1,9 +1,12 @@
 \documentclass[final, usenames, dvipsnames]{beamer}
 
-\title{Your super awesome title}
-\author{Your Name}
+\newcommand{\mytitle}{Your super awesome title}
+\title{\mytitle}
+\newcommand{\myauthor}{Your Name}
+\author{\myauthor}
 \year=2018
-\subtitle{\the\year~SEAS Student Research and Development Showcase}
+\newcommand{\mysubtitle}{\the\year~SEAS Student Research and Development Showcase}
+\subtitle{\mysubtitle}
 \institute{Flight Dynamics and Controls Laboratory (Dr. Taeyoung Lee)\\Department of Mechanical and Aerospace Engineering, School of Engineering and Applied Science}
 
 \mode<presentation>{\usetheme{GWU}}
@@ -63,18 +66,20 @@
 	\end{itemize}
 	\vspace{0.2in}
 	\begin{figure}
+		\hspace*{\fill}
         \begin{subfigure}[b]{0.4\columnwidth}%
-                \includegraphics[height=8.5cm]{hubble}%
-                \caption*{Hubble}%
+                \includegraphics[height=6.5cm]{hubble}%
+                \caption{Hubble}%
                 \label{fig:hubble}%
         \end{subfigure}%
-        \hfill%
+        \hspace*{\fill}%
         \begin{subfigure}[b]{0.4\columnwidth}%
-                \includegraphics[height=8.5cm]{ors-1}%
-                \caption*{Agile S/C}%
+                \includegraphics[height=6.5cm]{ors-1}%
+                \caption{Agile S/C}%
                 \label{fig:ors}%
         \end{subfigure}%
-        \hfill%
+		\hspace*{\fill}%
+		\caption{Figures}
 		\label{fig:intro}
 	\end{figure}
 \end{block} % end of background block
@@ -95,7 +100,7 @@
 \begin{column}{\twocolwidth} % second column start
 
 \begin{block}{The big middle block} % structure block
-	\begin{minipage}{0.5\columnwidth} % left half of this block
+	\begin{minipage}{0.4938\columnwidth} % left half of this block
 	\begin{itemize}
 		\item This block is split into two using \texttt{minipage}
 			\begin{align*}
@@ -104,7 +109,7 @@
 		\item Lots of fancy equations
 	\end{itemize}
 	\end{minipage}% end of left half of block
-	\begin{minipage}{0.5\columnwidth}% right half of block
+	\begin{minipage}{0.4938\columnwidth}% right half of block
 		\begin{itemize}
 			\item Now we're into the right half of the block
 				\begin{align*}

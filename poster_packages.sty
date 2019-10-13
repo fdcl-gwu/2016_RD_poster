@@ -6,7 +6,9 @@
 % DEFINE USEFUL PACKAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % OBSOLETE PACKAGE CHECK
+\let\zendcenter\endcenter % let nag ignore the "center" env in the the beamer.
 \RequirePackage[l2tabu,orthodox]{nag}
+\let\endcenter\zendcenter
 
 % -------------------MATH PACKAGES --------------------------------------
 \usepackage[binary-units=true]{siunitx} % SI units
@@ -55,11 +57,11 @@
     pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=false,     % window fit to page when opened
     pdfstartview={FitV},    % fits the width of the page to the window
-    pdftitle={\inserttitle},    % title
-    pdfauthor={\insertauthor},     % author
-    pdfsubject={\insertsubtitle},   % subject of the document
-    pdfcreator={\insertauthor},   % creator of the document
-    pdfproducer={\insertauthor}, % producer of the document
+    pdftitle={\mytitle},    % title
+    pdfauthor={\myauthor},     % author
+    pdfsubject={\mysubtitle},   % subject of the document
+    pdfcreator={\myauthor},   % creator of the document
+    pdfproducer={\myauthor}, % producer of the document
     pdfkeywords={}, % list of keywords
     pdfnewwindow=true,      % links in new PDF window
     colorlinks=false,       % false: boxed links; true: colored links
